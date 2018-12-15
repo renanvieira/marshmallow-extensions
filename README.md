@@ -5,6 +5,11 @@ Extension fields to use along with [Marshmallow](https://marshmallow.readthedocs
 
 ## Custom Fields
 
+* [EnumField](#enumfield)
+* [PositiveInteger](#positiveinteger)
+* [HexUUID](#hex-uuid)
+
+---
 ### EnumField
 Field to validate if the input string is a enum value.
 
@@ -23,7 +28,7 @@ class CustomSchema(Schema):
     frequency = EnumField(enum=FrequencyEnum, required=True)
 ```
 
-### PositiveInteger
+### ''
 
 Validates if the integer is positive, you can use the param `allow_zero` to set if zero is a valid value.
 
